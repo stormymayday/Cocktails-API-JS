@@ -1,6 +1,7 @@
 import getElement from "./utils/getElement.js";
 
-const URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=a';
-
 // Search cocktail by name
-// www.thecocktaildb.com/api/json/v1/1/ search.php?s=a
+const cocktailsURL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=a';
+
+// Lookup full cocktail details by id
+const singleCocktailURL = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007';
