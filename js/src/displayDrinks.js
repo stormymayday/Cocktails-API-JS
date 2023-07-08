@@ -1,8 +1,8 @@
 import getElement from "../utils/getElement.js";
 
-const displayDrinks = async (data) => {
+const displayDrinks = async ({ drinks }) => {
 
-    return data;
+    return drinks;
 
 };
 
