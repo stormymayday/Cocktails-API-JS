@@ -2,14 +2,12 @@ import fetchDrinks from "./fetchDrinks.js";
 
 const showDrinks = async (url) => {
 
+    // fetching drinks
     const data = await fetchDrinks(url);
 
+    // displaying drinks
     console.log(data);
-
-    // fetch drinks
-
-
-    // display drinks
+    // const section = await displayDrinks(data);
 
 };
 
