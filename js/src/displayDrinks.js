@@ -1,6 +1,6 @@
 const displayDrinks = async (data) => {
 
-    console.log(data);
+    return data;
 
 };
 

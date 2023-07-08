@@ -1,4 +1,5 @@
 import fetchDrinks from "./fetchDrinks.js";
+import displayDrinks from "./displayDrinks.js";
 
 const showDrinks = async (url) => {
 
@@ -6,8 +7,8 @@ const showDrinks = async (url) => {
     const data = await fetchDrinks(url);
 
     // displaying drinks
-    console.log(data);
-    // const section = await displayDrinks(data);
+    const section = await displayDrinks(data);
+    console.log(section);
 
 };
 
