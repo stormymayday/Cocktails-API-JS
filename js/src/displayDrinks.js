@@ -33,6 +33,9 @@ const displayDrinks = async ({ drinks }) => {
         // Setting the error message title to an empty string
         errorMessageTitle.textContent = '';
 
+        // Rendering the drinks
+        section.innerHTML = newDrinks;
+
     }
 
 };
