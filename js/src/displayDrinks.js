@@ -14,6 +14,9 @@ const displayDrinks = async ({ drinks }) => {
         // Clearing the cocktails container div
         section.innerHTML = null;
 
+        // Exiting the displayDrinks function
+        return;
+
     } else {
 
 
