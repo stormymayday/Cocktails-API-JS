@@ -36,6 +36,8 @@ const displayDrinks = async ({ drinks }) => {
         // Rendering the drinks
         section.innerHTML = newDrinks;
 
+        return section;
+
     }
 
 };
