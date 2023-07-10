@@ -30,6 +30,9 @@ const displayDrinks = async ({ drinks }) => {
 
         }).join('');
 
+        // Setting the error message title to an empty string
+        errorMessageTitle.textContent = '';
+
     }
 
 };
