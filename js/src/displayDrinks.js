@@ -2,7 +2,9 @@ import getElement from "../utils/getElement.js";
 
 const displayDrinks = async ({ drinks }) => {
 
-    return drinks;
+    const section = getElement('.section-center');
+
+    return section;
 
 };
 
