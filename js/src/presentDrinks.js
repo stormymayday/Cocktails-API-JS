@@ -1,7 +1,7 @@
 import fetchDrinks from "./fetchDrinks.js";
 import displayDrinks from "./displayDrinks.js";
 
-const showDrinks = async (url) => {
+const presentDrinks = async (url) => {
 
     // fetching drinks
     const data = await fetchDrinks(url);
@@ -12,4 +12,4 @@ const showDrinks = async (url) => {
 
 };
 
-export default showDrinks;
+export default presentDrinks;
