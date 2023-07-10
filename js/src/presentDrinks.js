@@ -8,7 +8,6 @@ const presentDrinks = async (url) => {
 
     // displaying drinks
     const section = await displayDrinks(data);
-    console.log(section);
 
 };
 

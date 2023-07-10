@@ -12,6 +12,19 @@ form.addEventListener('keyup', (e) => {
 
     e.preventDefault();
 
-    console.log(input.value);
+    const value = input.value;
+
+    // Checking if the input value is empty
+    if (!value) {
+
+        // Exiting the function
+        return;
+
+    } else {
+
+        // Invoking presentDrinks passing in the baseURL + the input value
+        presentDrinks(`${baseURL}${value}`);
+
+    }
 
 });
