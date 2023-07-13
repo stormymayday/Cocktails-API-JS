@@ -1,4 +1,5 @@
 import getElement from "../utils/getElement.js";
+import { hideLoading } from "./toggleLoading.js";
 
 const displayDrinks = async ({ drinks }) => {
 
@@ -7,6 +8,8 @@ const displayDrinks = async ({ drinks }) => {
 
     // Checking if drinks is null
     if (!drinks) {
+
+        hideLoading();
 
         // Displaying the error message
         errorMessageTitle.textContent = 'sorry, no drinks matched your search';
@@ -34,6 +37,8 @@ const displayDrinks = async ({ drinks }) => {
             </a>`;
 
         }).join('');
+
+        hideLoading();
 
         // Setting the error message title to an empty string
         errorMessageTitle.textContent = '';
