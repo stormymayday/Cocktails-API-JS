@@ -1,4 +1,8 @@
+import { showLoading } from "./toggleLoading.js";
+
 const fetchDrinks = async (url) => {
+
+    showLoading();
 
     try {
 
@@ -11,7 +15,6 @@ const fetchDrinks = async (url) => {
         console.error(error);
 
     }
-
 
 };
 
