@@ -5,7 +5,9 @@ const setDrink = (section) => {
         // Temporary for debugging
         e.preventDefault();
 
-        console.log(e.target);
+        const id = e.target.parentElement.dataset.id;
+
+        console.log(id);
 
     });
 
