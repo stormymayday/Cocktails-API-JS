@@ -1,6 +1,13 @@
 const setDrink = (section) => {
 
-    console.log(section);
+    section.addEventListener('click', (e) => {
+
+        // Temporary for debugging
+        e.preventDefault();
+
+        console.log(e.target);
+
+    });
 
 }
 
