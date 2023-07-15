@@ -7,11 +7,13 @@ const singleCocktailURL = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.ph
 
 const presentDrink = async () => {
 
+    // Getting drink ID from the Local Storage
     const id = localStorage.getItem('drink');
 
     console.log(`hello from presentDrink`);
 
-    fetchDrinks(`${singleCocktailURL}${id}`);
+    // Invoking fetchDrinks passing in 'singleCocktailURL+id'
+    const drink = fetchDrinks(`${singleCocktailURL}${id}`);
 
 
 };
