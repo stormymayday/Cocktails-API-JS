@@ -11,6 +11,8 @@ const presentDrink = async () => {
 
     console.log(`hello from presentDrink`);
 
+    fetchDrinks(`${singleCocktailURL}${id}`);
+
 
 };
 
