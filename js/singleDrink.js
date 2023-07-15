@@ -10,10 +10,20 @@ const presentDrink = async () => {
     // Getting drink ID from the Local Storage
     const id = localStorage.getItem('drink');
 
-    // Invoking fetchDrinks passing in 'singleCocktailURL+id'
-    const drink = await fetchDrinks(`${singleCocktailURL}${id}`);
+    // Checking if the ID not undefined
+    if (!id) {
 
-    console.log(drink);
+        // Re-directing to index.html
+        window.location.replace('index.html');
+
+    } else {
+
+        // Invoking fetchDrinks passing in 'singleCocktailURL+id'
+        const drink = await fetchDrinks(`${singleCocktailURL}${id}`);
+
+        console.log(drink);
+
+    }
 
 };
 
