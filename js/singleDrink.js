@@ -7,6 +7,8 @@ const singleCocktailURL = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.ph
 
 const presentDrink = async () => {
 
+    const id = localStorage.getItem('drink');
+
     console.log(`hello from presentDrink`);
 
 
