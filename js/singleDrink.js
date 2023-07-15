@@ -1,1 +1,2 @@
-console.log(`hello`);
+import fetchDrinks from "./src/fetchDrinks.js";
+
