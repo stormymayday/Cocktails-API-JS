@@ -7,3 +7,4 @@ const presentDrink = async () => {
 
 };
 
+window.addEventListener('DOMContentLoaded', presentDrink);
