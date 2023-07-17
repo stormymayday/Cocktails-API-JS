@@ -13,6 +13,7 @@ const displaySingleDrink = (data) => {
     const { strDrinkThumb: image, strDrink: name, strInstructions: description } = drink;
 
     // Extracting the ingredients
+    // NOTE: Some ingredients will be null
     const list = [
         drink.strIngredient1,
         drink.strIngredient2,
@@ -22,6 +23,10 @@ const displaySingleDrink = (data) => {
     ];
 
     console.log(list);
+
+    const img = getElement('.drink-img');
+    console.log(img);
+
 };
 
 export default displaySingleDrink;
