@@ -1,12 +1,14 @@
 import { hideLoading } from "./toggleLoading.js";
 import getElement from "../utils/getElement.js";
 
-const displaySingleDrink = (drink) => {
+const displaySingleDrink = (data) => {
 
     // Hiding the Loading
     hideLoading();
 
-    console.log(drink);
+    const drink = data.drinks[0];
+
+    const { strDrinkThumb: image, strDrink: name, strInstructions: description } = drink;
 
 };
 
