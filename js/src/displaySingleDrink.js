@@ -36,11 +36,23 @@ const displaySingleDrink = (data) => {
     // Setting the drink name as the page title
     document.title = name;
 
-    // Setting the Drink Name
+    // Setting the Name
     drinkName.textContent = name;
 
-    // Setting the Drink Description
+    // Setting the Description
     drinkDescription.textContent = description;
+
+    // Setting the Ingredients
+    drinkIngredients.innerHTML = list.map((ingredient) => {
+
+        // Checking if the ingredient is NULL
+        // Exiting
+        if (!ingredient) return;
+
+        // Otherwise, returning the 'ingredient'
+        return `<li aria-label="checkbox icon"><i class="far fa-check-square"></i>${ingredient}</li>`;
+
+    }).join('');
 
 };
 
