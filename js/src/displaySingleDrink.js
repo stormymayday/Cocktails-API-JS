@@ -36,8 +36,11 @@ const displaySingleDrink = (data) => {
     // Setting the drink name as the page title
     document.title = name;
 
-    // Setting the drinkName
+    // Setting the Drink Name
     drinkName.textContent = name;
+
+    // Setting the Drink Description
+    drinkDescription.textContent = description;
 
 };
 
