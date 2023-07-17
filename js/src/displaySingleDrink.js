@@ -30,8 +30,11 @@ const displaySingleDrink = (data) => {
     const drinkDescription = getElement('.drink-description');
     const drinkIngredients = getElement('.drink-ingredients');
 
-    // Setting the drink image
+    // Setting the drink image source attribute
     drinkImage.src = image;
+
+    // Setting the drink name as the page title
+    document.title = name;
 
 };
 
