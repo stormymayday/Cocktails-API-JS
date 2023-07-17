@@ -24,8 +24,10 @@ const displaySingleDrink = (data) => {
 
     console.log(list);
 
-    const img = getElement('.drink-img');
-    console.log(img);
+    const drinkImage = getElement('.drink-img');
+    const drinkName = getElement('.drink-name');
+    console.log(drinkImage);
+    console.log(drinkName);
 
 };
 
