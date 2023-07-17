@@ -22,13 +22,16 @@ const displaySingleDrink = (data) => {
         drink.strIngredient5,
     ];
 
-    console.log(list);
+    // console.log(list);
 
+    // Selecting the elements
     const drinkImage = getElement('.drink-img');
     const drinkName = getElement('.drink-name');
     const drinkDescription = getElement('.drink-description');
     const drinkIngredients = getElement('.drink-ingredients');
-    console.log(drinkIngredients);
+
+    // Setting the drink image
+    drinkImage.src = image;
 
 };
 
