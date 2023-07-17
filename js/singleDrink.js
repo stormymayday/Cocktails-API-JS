@@ -21,7 +21,8 @@ const presentDrink = async () => {
         // Invoking fetchDrinks passing in 'singleCocktailURL+id'
         const drink = await fetchDrinks(`${singleCocktailURL}${id}`);
 
-        console.log(drink);
+        // Invoking displaySingleDrink passing in the drink
+        displaySingleDrink(drink);
 
     }
 
